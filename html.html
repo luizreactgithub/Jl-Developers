@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    
+  <title>História do HTML</title>
+
+<meta  charset="UTF-8"/>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<link rel="icon" href="iconag.ico" type="img/x-icon" />
+<link rel="shortcut icon" href="iconag.ico" type="img/x-icon" />
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body{
+
+overflow-x: hidden;
+height:700px;
+background-image:url("img/ground2.png");
+
+}
+
+span#destaque{
+
+font-family:'Manjari', sans-serif;
+font-size:18pt;
+color:#66CDAA;
+
+}
+
+ h3.titulo2{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:46pt;
+color:#66CDAA;
+top:640px;
+margin-left:600px;
+
+
+  }
+
+h3.titulo3{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:46pt;
+color:#66CDAA;
+top:1400px;
+margin-left:550px;
+
+
+  }
+
+h3.titulo4{
+display:block;
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:46pt;
+color:#66CDAA;
+top:2240px;
+margin-left:325px;
+
+}
+
+h3.titulo4mobile{
+
+display:none;
+
+}
+h3.titulo5{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:46pt;
+color:#66CDAA;
+top:3290px;
+margin-left:440px;
+
+}
+
+
+img#inicio{
+ 
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  top:1190px;
+  left:440px;
+}
+img#ex{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:160px;
+ width:600px;
+ left:50px;
+}
+
+img#lee{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:1558px;
+ left:0px;
+ border-radius:10px;
+ width:300px;
+ height:400px:
+}
+
+img#html{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:3068px;
+ left:1040px;
+ border-radius:10px;
+ width:300px;
+ height:400px:
+}
+
+
+span#tim{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:1558px;
+ left:6px;
+ font-family:'Manjari', sans-serif;
+ font-size:12pt;
+ color:#66CDAA;
+}
+
+ h2.para1 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:17pt;
+  top:850px;
+  line-height: 30px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+ h2.para2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:17pt;
+  top:1550px;
+  line-height: 30px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+
+ h2.para3 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:17pt;
+  top:2550px;
+  line-height: 30px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+
+h2.para4 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:17pt;
+  top:3620px;
+  line-height: 30px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+h2.para3 span{
+  
+  font-family:'Manjari', sans-serif;
+  font-size:17pt;
+  color:#5F9EA0;
+
+}
+
+
+img#icon{
+position:relative;
+width:80px;
+height:80px;
+left:-65px;
+top:-6px;
+}
+
+header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:370px;
+  height:190px;
+  top:-120px;
+  left:-60px;
+
+  }
+
+header#topo h2.titulo{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:56pt;
+color:cyan;
+top:-180px;
+left:-30px;
+opacity:0.5;
+
+  }
+
+
+header#topo{
+
+position:absolute;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/htmlcapa.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:95.6%;
+left:-10px;
+top:80px;
+
+}
+
+
+header#topo h1{
+
+padding-bottom:320px;
+opacity:0;
+
+}
+
+
+/*rodape footer*/
+
+footer.rodape h1{
+
+padding-bottom:220px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:cyan;
+top:-40px;
+left:-30px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+left:-170px;
+top:-100px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+top:-200px;
+left:80px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:95.6%;
+left:-10px;
+top:4550px;
+
+}
+
+
+
+
+
+/*menu responsivo*/
+
+* {
+
+margin:0;
+padding:0;
+list-style-type:none;
+}
+
+
+header.full{
+ 
+  position:absolute;
+  top:1710px;
+  width:1380px;
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+}
+
+a:hover{
+
+  opacity:0.7;
+  color:#ee1160;
+}
+
+
+nav{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+font-family: 'Manjari', sans-serif;
+background:#0c0c0c;
+height:15vh;/* vh = viewport height*/
+font-size:20pt;
+top:-1710px;
+
+}
+
+.nav{
+
+  display:flex;
+}
+
+.nav li{
+position:relative;
+letter-spacing:4px;
+margin-left:32px;
+left:-24px;
+top:-8px;
+
+}
+
+/*responsive part*/
+
+.mobile div{
+
+  display:none;
+  width:32px;
+  height:2px;
+  background:white;
+  margin:8px;
+
+}
+
+.mobile{
+
+  cursor:pointer;
+}
+
+/*desaparece os dois menus responsivos*/
+
+header.full1{
+  display:none;
+}
+header.full2{
+  display:none;
+}
+
+
+@media screen and (max-width: 1236px) {
+
+/*desaparece os dois menus responsivos*/
+header.full1{
+  display:none;
+}
+  
+header.full2{
+  display:none;
+}
+
+
+header#topo{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/first.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-500px;
+}
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+
+span#destaque{
+
+font-family:'Manjari', sans-serif;
+font-size:38pt;
+color:#66CDAA;
+
+}
+
+ h3.titulo2{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:140px;
+margin-left:600px;
+
+
+  }
+
+h3.titulo3{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:1750px;
+margin-left:550px;
+
+
+  }
+
+h3.titulo4{
+display:none;
+
+}
+h3.titulo4mobile{
+
+display: block;  
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:4540px;
+margin-left:445px;
+
+}
+
+
+h3.titulo5{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:7060px;
+margin-left:490px;
+
+}
+
+
+h3.titulo52{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:7060px;
+margin-left:530px;
+
+}
+
+
+img#inicio{
+ 
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  top:1390px;
+  left:300px;
+  width:800px;
+}
+img#ex{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:590px;
+ width:980px;
+ left:-100px;
+}
+
+img#lee{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:2658px;
+ left:940px;
+ border-radius:10px;
+ width:250px;
+ height:350px:
+}
+
+img#html{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:6608px;
+ left:900px;
+ border-radius:10px;
+ width:350px;
+ height:400px:
+}
+
+
+span#tim{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:3000px;
+ left:990px;
+ font-family:'Manjari', sans-serif;
+ font-size:22pt;
+ color:#66CDAA;
+}
+
+ h2.para1 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:800px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:37pt;
+  top:450px;
+  line-height: 50px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+ h2.para2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:37pt;
+  top:2110px;
+  line-height: 50px;
+  color:#696969;
+  left:300px;
+  text-indent:20px;
+}
+
+
+ h2.para3 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:37pt;
+  top:4950px;
+  line-height: 50px;
+  color:#696969;
+  left:300px;
+  text-indent:20px;
+}
+
+
+h2.para4 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:850px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:37pt;
+  top:7720px;
+  line-height: 50px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+h2.para3 span{
+  
+  font-family:'Manjari', sans-serif;
+  font-size:37pt;
+  color:#5F9EA0;
+
+}
+
+
+header#topo h2.titulo{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:86pt;
+color:cyan;
+top:340px;
+left:-30px;
+opacity:0.5;
+
+  }
+
+  div.dados button{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:45pt;
+display: block;
+padding: 15px;
+border:solid #87CEFA;
+background: transparent; 
+border-radius:20px;
+color:#87CEFA;
+text-align: center;
+text-decoration: none;
+top:0px;
+left:300px;
+transition:0.3s;
+cursor:pointer;
+
+}
+
+
+div.dados article.texto button:hover{
+
+border:solid springgreen;
+border-radius:35px;
+color:springgreen;
+transition:0.3s;
+
+}
+
+
+div.dados{
+width:710px;
+height:550px;
+margin-left:50px;
+margin-top:50px;
+display:block;
+position:relative;
+padding:40px;
+float:center;
+top:1500px;
+left:-300px;
+
+}
+
+div.dados img.icon{
+display:flex;
+flex-direction:column;
+position:relative;
+top:100px;
+left:0px;
+width:130px;
+height:130px;
+border-radius:20px;
+}
+
+
+div.dados h3.titulo{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:50pt;
+top:-80px;
+color:#2E8B57;
+left:160px;
+text-indent:20px;
+}
+
+
+div.dados article.texto h2 {
+
+display:flex;
+flex-direction:column;
+font-family:'Manjari', sans-serif;
+position:relative;
+width:550px;
+text-align:left;
+top:-40px;
+font-size:30pt;
+color:#6C7B8B;
+left:160px;
+text-indent:20px;
+}
+
+
+
+img#icon{
+position:absolute;
+width:130px;
+height:130px;
+left:15px;
+top:5px;
+}
+
+  header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  top:300px;
+  left:-30px;
+  width:650px;
+  height:360px; 
+  }
+
+
+
+/*desaparece menu tela grande*/
+
+
+header.full{
+  display:none;
+}
+
+  header#topo{
+  
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/htmlcapa.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:left;
+  padding-left:100px;
+  color:white;
+  width:92.8%;
+  left:-10px;
+  top:0vh;
+  height:1500px;
+  
+  }
+ 
+header#topo h1{
+
+padding-bottom:300px;
+opacity:0;
+
+}
+
+
+
+/*footer*/
+
+footer.rodape h1{
+
+padding-bottom:300px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:33pt;
+color:cyan;
+top:-100px;
+left:-40px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:30pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+left:-200px;
+top:-80px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+top:-225px;
+left:180px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.5%;
+left:-10px;
+top:11200px;
+}
+/*fecha sessão*/
+
+
+/*altura do menu responsivo*/
+
+header.full2 nav {
+
+  height:180px;
+
+}
+
+header.full2{
+  
+  display:block;
+  position:absolute;
+  top:1700px;
+  width:1000px;
+}
+
+/*desaparece menu que fica encima do nav*/
+
+header.full1{
+  
+  display:block;
+  position:absolute;
+  top:-2000px;
+
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+
+
+
+}
+
+a:hover{
+
+  opacity:0.7;
+}
+
+.logo2{
+ font-size:24px;
+ text-transform:uppercase;
+ letter-spacing:7px;
+ 
+}
+
+.nav2{
+
+  position:relative;
+  display:flex;
+  height:50vh;
+  width:101vw;
+  background:#0c0c0c;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  font-size:45pt;
+  transform:translateY(1400px);      /*nav escondida */
+  transition:transform 0.3s ease-in;
+  padding-top:120px;
+  padding-bottom:100px;
+  margin-top:200px;
+  top:1700px;
+
+
+}
+
+.nav2.active{                       /*active é uma classe que vai ser usada no js*/
+  
+  transform:translateY(2380px);     /*nav sendo mostrada */
+  
+}
+
+
+.nav2 li{
+  margin-top:-1680px; /* esconde os links */
+  margin-left:0px;
+  background-image:url("img/back3.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position top:300px;
+  padding:40px;
+
+}
+
+
+
+
+.mobile2{
+
+display:block;
+cursor:pointer;
+}
+
+
+
+.mobile2 div{
+position:relative;
+display:flex;
+width:100px;
+height:20px;
+border-radius:10px;
+background:#87CEEB;
+margin:8px;
+border:none;
+transition:0.3s;
+left:340px;
+}
+
+/*animação hamburger*/
+
+
+
+@keyframes linkFade{             /*animação links */
+ 
+
+to{
+
+opacity:1;
+transform:translateY(870px);
+
+
+}
+
+
+}
+
+
+/*animação menu hamburger*/
+
+.mobile2.active .l1{
+
+transform: rotate(-45deg) translate(-8px,8px);
+background:#ee1160;
+}
+
+.mobile2.active .l2{
+
+opacity:0;
+
+}
+.mobile2.active .l3{
+
+transform: rotate(43deg) translate(-15px,-18.5px);
+background:#ee1160;
+}
+  }
+
+/*para telas com alturas(height) menores como microsoft lumia 550*/
+
+@media screen and (max-height:1024px) {
+
+
+  .nav2.active{                       /*active é uma classe que vai ser usada no js*/
+  
+  transform:translateY(3590px);     /*nav sendo mostrada */
+  
+}
+
+.nav2{
+
+padding-top:300px;
+padding-bottom:2300px;
+top:-200px;
+
+}
+
+.nav2 li{
+ 
+  position:relative;
+  margin-top:80px;
+  top:950px;
+
+}
+
+
+}
+
+
+</style>
+  
+</head>
+ 
+<body >
+
+
+<div class='dados'> 
+
+
+<h3 class="titulo2">HTML</h3>
+<h2 class="para1"> 
+Toda vez que você acessa um site pela internet você já se perguntou de como é construida aquela página?
+Bom existe toda uma história por trás de como nós chegamos nesse atual momento da nossa tecnologia que permite
+que nós a qualquer momento possamos acessar quase qualquer tipo de informação.
+Para que isso fosse possível algumas invenções e criações foram necessárias , se tratando de páginas web uma delas
+foi o HTML !
+<br>
+<br>
+Veremos nesse artigo um pouco da história dessa incrivel tecnologia chamada abreviadamente HTML.
+</h2>
+
+<img id="inicio" src="img/paginas/inicio.jpg"/>
+
+<!-- p2 -->
+
+<h3 class="titulo3">História</h3>
+
+<h2 class="para2"> 
+HTML (abreviação de HyperText Markup Language, que em português seria "Linguagem de Marcação de Hipertexto") 
+é a principal linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados 
+por navegadores.Tim Berners-Lee físico britânico foi o criador do HTML. Tim Berners-Lee, se inspirou numa linguagem  chamada SGML para o desenvolvimento do HTML mas no HTML já era possivel ligar uma pagina a outra
+ isso passou a ser chamado de hiperlinks.
+<br>
+<br>
+A linguagem  SGML (Standard Generalized Markup Language)  montava  documentos compartilhados na Web,algumas tags foram herdadas do 
+SGML para o HTML 
+<br>
+<br>
+O propósito inicial de Tim Berners-Lee sobre a linguagem 
+de marcação HTML era uma solução para o compartilhamento de documentos científicos entre pesquisadores, e  para facilitar esse 
+trabalho , ele com a ajuda do estudante Robert Cailliau do  CERN (European Council for Nuclear Research-"Conselho Europeu para pesquisa Nuclear"),
+empenharam-se a criar o HTML.
+<br>
+<br>
+Em 1989, conseguiu realizar a primeira comunicação entre um cliente HTTP e um servidor e depois tendo sua primeira versão em 1992.
+Vale a pena lembrar que esse gênio Tim Berners-Lee também criou o protocólo HTTP  e a World Wide Web (o famoso www).
+<br>
+<br>
+<br>
+<!-- p3-->
+
+<h3 class="titulo4">Versões do HTML até hoje</h3>
+
+<h3 class="titulo4mobile">Versões  </h3>
+<h2 class="para3"> 
+
+<span>1995 - Versão 2.0</span>
+<br>
+ Foi apresentado na primeira conferência da World Wide Web,  
+ nessa versão o HTML já possuia sua principais características.
+ Primeira versão que surgiu depois da criação do HTML.
+
+
+<br>
+
+&nbsp &nbsp <span>1999 - Versão 3.2</span>
+<br>
+Já era possível criar tabelas , texto ao redor de imagens etc. 
+Nessa versão houve correções da versão 2.0 principalmente correções de compatibilidade.
+
+<br>
+
+
+&nbsp &nbsp <span>1999 - Versão 4.01 </span>
+<br>
+No HTML 4.0 toda a formatação já podia ser transferida do documento HTML para uma folha de estilo separada. Porque a HTML 4.0 separa a apresentação 
+do documento de sua estrutura,
+total controle do layout de apresentação.
+<br>
+
+&nbsp &nbsp <span>2014 - Versão HTML 5 </span>
+<br>
+ Última versão do HTML desenvolvida que aperfeiçou a experiência  para os desenvolvedores e usuários.
+ Essa versão possui novos tipos de controles em formulários, como e-mail , pesquisa, data e hora,
+ melhor tratamento de exceção, mais tags para substituir scripts, independência de plataforma e redução da necessidade de plugins externos.
+ o HTML 5 fornece o suporte de áudio e vídeo em alto nível, algo que não existia nas versões anteriores.
+
+<br>
+<br>
+<br>
+ 
+<!-- p4 -->
+
+<h3 class="titulo5">Estrutura</h3>
+<h3 class="titulo52"></h3>
+
+<h2 class="para4"> 
+O HTML é uma linguagem de marcação, e como outras linguagem é por meio de seu código que o conteúdo é
+interpretado criando o que vemos numa página.
+Esses códigos são inseridos em tags, que determinam  os elementos presentes na 
+estrutura da página,a fonte da letra, as cores,  o seu tamanho , as quebras de linha e etc.
+
+<img id="ex" src="img/paginas/ex.jpg"/>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>Como pode  visto acima a tag <span id="destaque">&lt;head/&gt;</span> faz parte da estrutura básica do documento, sua finalidade é definir o
+cabeçalho do documento com informações que não serão exibidas dentro do conteúdo da página.</p>
+<p>Depois temos a tag <span id="destaque">&lt;body/&gt;</span> que vai ser todo o código que vai aprecer na página.
+</p>
+<br>
+Vantagens do HTML :
+<br>
+<br>
+* &nbsp Melhor visibilidade de SEO ( Search Engine Optimization que significa Otimização para motores de busca)
+<br>
+* &nbsp Compatibilidade Universal
+<br>
+* &nbsp Totalmente otimizado para smartphones
+<br>
+* &nbsp Código mais limpo e de fácil compreensão
+<br>
+* &nbsp Permissão de cache offline 
+
+
+
+</h2>
+<img id="lee" src="img/paginas/tim.png"/>
+<img id="html" src="img/paginas/html.png"/>
+<span id="tim" >Tim Berners-Lee</span>
+
+</div>
+
+
+</section>
+
+
+
+
+<header id="topo">
+<h1>Espaço</h1>
+<h2 class="titulo">História do HTML</h2>
+
+</header>
+
+
+<script src="input1.js"></script>
+
+
+<!--first menu-->
+
+<header class="full">  
+<nav>
+
+
+<img  id="icon" src="img/icon.png"/>
+
+
+
+<div class="mobile">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+<ul class="nav">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+
+
+</ul>
+
+</header>
+
+</nav>
+
+
+<!--second menu-->
+
+
+<header class="full1">  
+<nav>
+
+
+<ul class="nav2">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+
+</ul>
+
+</header>
+
+</nav>
+
+
+<header class="full2">  
+<nav>
+
+<img  id="icon" src="img/icon.png"/>
+
+
+<div class="mobile2">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+</header>
+
+</nav>
+
+<footer class="rodape">
+<h3 id="acess"> Acesse também :</h3>
+<h1>Espaço</h1>
+<a href="https://play.google.com/store/apps/developer?id=JL+Desenvolvedores" target="_blank"><img  id="gp" src="img/gp2.png"/></a>
+<a href="https://www.youtube.com/channel/UC_1ELvJeqDve3ckNsCM0-5g" target="_blank"><img  id="yt" src="img/yt2.png"/></a>
+
+<h3> <img src="img/copy.png"/> <span id="ano"></span> Desenvolvido por</br> 
+JL desenvolvedores</h3>
+
+</footer>
+
+<script src="js.js"></script>
+</body>
+</html>

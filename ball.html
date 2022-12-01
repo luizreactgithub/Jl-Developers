@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    
+  <title>BallTown</title>
+
+<meta  charset="UTF-8"/>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<link rel="icon" href="iconag.ico" type="img/x-icon" />
+<link rel="shortcut icon" href="iconag.ico" type="img/x-icon" />
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body{
+
+overflow-x: hidden;
+height:700px;
+
+
+
+
+}
+
+div.radios2{
+display:none;
+}
+div.radios{
+display:block;
+}
+
+div.radios input{
+  position:relative; 
+  appearance:none;
+  display:block;
+  width:30px;
+  height:30px;
+  margin:20px;
+  top:-850px;
+  left:580px;
+  background:grey;
+  border:solid #87CEFA;
+  background: transparent; 
+  border-radius:15px;
+  
+}
+
+div.radios input:before{/*aqui ele mostra o selecionado*/
+content:'';
+}
+
+
+img#icon{
+position:relative;
+width:80px;
+height:80px;
+left:-60px;
+
+}
+
+/*so pra nao dar errro no input*/
+header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:450px;
+  height:100px;
+  top:-100px;
+  left:-50px;
+  
+
+  }
+
+header#topo{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/transp.png");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-3910px;
+
+}
+
+
+header#topo h1{
+
+padding-bottom:187px;
+opacity:0;
+
+}
+
+
+/* section topo*/
+
+
+section#topo2 img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:450px;
+  height:100px;
+  top:-350px;
+  left:-50px;
+
+  }
+
+section#topo2{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/firstball.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-3927px;
+
+}
+
+
+section#topo2 h1{
+
+padding-bottom:437px;
+opacity:0;
+
+}
+
+/*rodape footer*/
+
+footer.rodape h1{
+
+padding-bottom:260px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:cyan;
+top:-40px;
+left:-30px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+left:-170px;
+top:-100px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+top:-200px;
+left:80px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-1725px;
+
+}
+
+/*sessão mapas*/
+
+
+
+article.texto h2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:500px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:20pt;
+  top:650px;
+  color:#D2691E;
+  left:650px;
+  text-indent:20px;
+}
+
+
+section#ball img.ilha{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-190px;
+  left:-500px;
+}
+
+
+section#ball img.ilha1{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-390px;
+  left:-290px;
+}
+section#ball img.ilha2{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-390px;
+  left:-510px;
+}
+
+section#ball img.ilha3{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-580px;
+  left:-290px;
+}
+
+section#ball img.ilha4{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-580px;
+  left:-400px;
+}
+
+section#ball h3.ilhas{
+
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  font-family:'Manjari', sans-serif;
+  font-size:55pt;
+  top:550px;
+  color:#8B7355;
+  left:750px;
+
+
+}
+
+
+section#ball{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/mapas2.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:200px;
+
+}
+
+section#ball h1{
+
+padding-bottom:600px;
+opacity:0;
+
+}
+/*fecha sessão */
+
+/*sessão final*/
+
+
+
+
+section#final article.texto button.s1{
+  position:relative;
+  font-family:'Manjari', sans-serif;
+  font-size:40pt;
+  display: block;
+  padding: 15px;
+  border:solid springgreen;
+  background: transparent; 
+  border-radius:20px;
+  color:springgreen;
+  text-align: center;
+  text-decoration: none;
+  top:-175px;
+  left:-260px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+section#final article.texto button.s1:hover{
+ 
+  border:solid #87CEFA ;
+  border-radius:35px;
+  color:#87CEFA;
+  transition:0.3s;
+
+}
+
+
+section#final article.texto button.s2{
+  position:relative;
+  font-family:'Manjari', sans-serif;
+  font-size:40pt;
+  display: block;
+  padding: 15px;
+  border:solid #87CEFA;
+  background: transparent; 
+  border-radius:20px;
+  color:#87CEFA;
+  text-align: center;
+  text-decoration: none;
+  top:-270px;
+  left:200px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+section#final article.texto button.s2:hover{
+ 
+  border:solid springgreen;
+  border-radius:35px;
+  color:springgreen;
+  transition:0.3s;
+
+}
+section#final h3.titulo{
+
+position:absolute;
+font-family:'Manjari', sans-serif;
+font-size:70pt;
+top:90px;
+color:#7A378B;
+left:660px;
+text-indent:20px;
+}
+
+
+section#final img{
+
+display:flex;
+flex-direction:column;
+position:relative;
+width:200px;
+height:200px;
+top:-220px;
+left:-500px;
+}
+
+section#final{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/final.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:350px;
+
+}
+
+section#final h1{
+
+padding-bottom:500px;
+opacity:0;
+
+}
+
+section#final article.texto h2 {
+
+display:flex;
+flex-direction:column;
+position:absolute;
+width:500px;
+font-size:25pt;
+font-family:'Manjari', sans-serif;
+text-align:left;
+top:260px;
+color:#8B7D7B;
+left:590px;
+text-indent:20px;
+}
+
+
+/*fecha sessão */
+
+
+/*sessão skin*/
+
+section#ps h3.titulo{
+
+position:absolute;
+font-family:'Manjari', sans-serif;
+font-size:70pt;
+top:90px;
+color:#7A378B;
+left:660px;
+text-indent:20px;
+}
+
+
+section#ps img{
+
+display:flex;
+flex-direction:column;
+position:relative;
+width:200px;
+height:200px;
+top:-220px;
+left:-500px;
+}
+
+section#ps{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/skin.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-1160px;
+
+}
+
+section#ps h1{
+
+padding-bottom:500px;
+opacity:0;
+
+}
+
+section#ps article.texto h2 {
+
+display:flex;
+flex-direction:column;
+position:absolute;
+width:500px;
+font-size:25pt;
+font-family:'Manjari', sans-serif;
+text-align:left;
+top:260px;
+color:#8B7D7B;
+left:590px;
+text-indent:20px;
+}
+
+
+/*fecha sessão */
+
+
+/* patentes */
+
+section#prog h3.titulo{
+
+position:absolute;
+font-family:'Manjari', sans-serif;
+font-size:70pt;
+top:30px;
+color:#3CB371; 
+left:400px;
+text-indent:20px;
+}
+
+
+section#prog img{
+
+display:flex;
+flex-direction:column;
+position:relative;
+width:200px;
+height:200px;
+top:-220px;
+left:-500px;
+}
+
+
+section#prog{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/patent.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-240px;
+
+}
+
+section#prog article.texto h2 {
+
+display:flex;
+flex-direction:column;
+position:absolute;
+width:500px;
+font-size:22pt;
+font-family:'Manjari', sans-serif;
+text-align:left;
+top:270px;
+color:#458B74;
+left:510px;
+text-indent:20px;
+}
+
+
+section#prog h1{
+
+padding-bottom:500px;
+opacity:0;
+
+}
+/*fecha sessão */
+
+
+/*menu responsivo*/
+
+* {
+
+margin:0;
+padding:0;
+list-style-type:none;
+}
+
+
+header.full{
+ 
+  position:relative;
+  top:-3463px;
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+}
+
+a:hover{
+
+  opacity:0.7;
+  color:#ee1160;
+}
+
+
+nav{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+font-family: 'Manjari', sans-serif;
+background:#0c0c0c;
+height:15vh;/* vh = viewport height*/
+font-size:20pt;
+top:-1710px;
+
+}
+
+.nav{
+
+  display:flex;
+}
+
+.nav li{
+
+letter-spacing:4px;
+margin-left:32px;
+
+}
+
+/*responsive part*/
+
+.mobile div{
+
+  display:none;
+  width:32px;
+  height:2px;
+  background:white;
+  margin:8px;
+
+}
+
+.mobile{
+
+  cursor:pointer;
+}
+
+/*desaparece os dois menus responsivos*/
+
+header.full1{
+  display:none;
+}
+header.full2{
+  display:none;
+}
+
+
+@media screen and (max-width: 1236px) {
+
+
+
+header#topo{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/first.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-500px;
+}
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+
+/*inputs mobile*/
+
+div.radios{
+display:none;
+}
+div.radios2{
+display:block;
+width:10px;
+left:-100px;
+}
+
+
+  div.radios2 input{
+  position:relative;
+  appearance:none;
+  padding:30px;
+  display:block;
+  width:70px;
+  height:70px;
+  margin:40px;
+  background:grey;
+  top:0px;
+  left:390px;
+  border:solid #87CEFA;
+  background: transparent; 
+  border-radius:33px;
+}
+div.radios2 input:before{/*aqui ele mostra o selecionado*/
+content:'';
+}
+
+
+img#icon{
+position:absolute;
+width:130px;
+height:130px;
+left:15px;
+
+}
+
+  header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  top:100px;
+  left:-30px;
+  width:790px;
+  height:180px; 
+  }
+
+
+/*desaparece menu tela grande*/
+
+
+header.full{
+  display:none;
+}
+
+  header#topo{
+  
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/transp.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center,left;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:0vh;
+  height:1500px;
+  
+  }
+ 
+header#topo h1{
+
+padding-bottom:300px;
+opacity:0;
+
+}
+
+/*sessão balltown*/
+
+section#ball h1{
+
+padding-bottom:650px;
+opacity:0;
+
+}
+  section#ball{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/mapas2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:1295px;
+  height:2000px;
+  
+  }
+ 
+  section#ball img.ilha{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-190px;
+  left:-450px;
+}
+
+
+section#ball img.ilha1{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-390px;
+  left:-240px;
+}
+section#ball img.ilha2{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-390px;
+  left:-460px;
+}
+
+section#ball img.ilha3{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-580px;
+  left:-240px;
+}
+
+section#ball img.ilha4{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-580px;
+  left:-350px;
+}
+
+section#ball h3.ilhas{
+
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  font-family:'Manjari', sans-serif;
+  font-size:70pt;
+  top:350px;
+  color:#8B7355;
+  left:500px;
+
+
+}
+
+
+  article.texto button{
+  position:relative;
+  top:620px;
+  font-size:65pt;
+  border-radius:25px;
+  left:-30px;
+}
+
+article.texto h2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:500px;
+  text-align:center;
+  top:540px;
+  text-shadow:#8392b2 2.5px 0px;
+  font-size:40pt;
+  color:#D2691E;
+  left:380px;
+  text-indent:20px;
+}
+
+/*fecha sessão*/
+
+
+/*sessão final*/
+
+
+section#final article.texto button.s1{
+  position:absolute;
+  font-family:'Manjari', sans-serif;
+  font-size:60pt;
+  display: block;
+  padding: 15px;
+  border:solid springgreen;
+  background: transparent; 
+  border-radius:20px;
+  color:springgreen;
+  text-align: center;
+  text-decoration: none;
+  top:730px;
+  left:340px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+section#final article.texto button.s1:hover{
+ 
+  border:solid #87CEFA;
+  border-radius:35px;
+  color:#87CEFA;
+  transition:0.3s;
+
+}
+
+
+section#final article.texto button.s2{
+  position:relative;
+  font-family:'Manjari', sans-serif;
+  font-size:60pt;
+  display: block;
+  padding: 15px;
+  border:solid #87CEFA;
+  background: transparent; 
+  border-radius:20px;
+  color:#87CEFA;
+  text-align: center;
+  text-decoration: none;
+  top:620px;
+  left:0px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+section#final article.texto button.s2:hover{
+ 
+  border:solid springgreen;
+  border-radius:35px;
+  color:springgreen;
+  transition:0.3s;
+
+}
+
+
+section#final{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/mobile/final2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:3080px;
+  height:1800px;
+  
+  }
+ 
+section#final h3.titulo{
+
+position:absolute;
+font-family:'Manjari', sans-serif;
+font-size:77pt;
+top:110px;
+color:purple;
+left:380px;
+text-indent:20px;
+}
+
+
+
+/*fecha sessão*/
+
+
+/* section topo*/
+
+
+section#topo2 img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  top:100px;
+  left:-30px;
+  width:790px;
+  height:180px; 
+  }
+
+section#topo2{
+
+  
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/mobile/firstball2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center,left;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:0vh;
+  height:1500px;
+  
+
+
+}
+
+
+section#topo2 h1{
+
+padding-bottom:437px;
+opacity:0;
+
+}
+
+
+/*sessão skin*/
+
+section#ps{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/mobile/skin2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:right;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:-512px;
+  height:1800px;
+  
+  }
+ 
+section#ps h3.titulo{
+
+position:absolute;
+font-family:'Manjari', sans-serif;
+font-size:77pt;
+top:110px;
+color:purple;
+left:380px;
+text-indent:20px;
+}
+
+
+section#ps img{
+
+display:flex;
+flex-direction:column;
+position:relative;
+width:200px;
+height:200px;
+top:770px;
+left:-30px;
+}
+
+section#ps article.texto h2 {
+  
+
+  position:absolute;
+  width:500px;
+  font-family:'Manjari', sans-serif;
+  text-align:center;
+  top:370px;
+  font-size:40pt;
+  color:#8B7D7B;
+  left:270px;
+
+}
+
+/*fecha sessão*/
+
+
+
+/*programação*/
+
+
+section#prog{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/mobile/patentes2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:right;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:1290px;
+  height:1800px;
+  
+  }
+ 
+section#prog h3.titulo{
+
+position:absolute;
+font-family:'Manjari', sans-serif;
+font-size:72pt;
+top:190px;
+color:#3CB371;  
+left:200px;
+text-indent:20px;
+}
+
+
+section#prog img{
+
+display:flex;
+flex-direction:column;
+position:relative;
+width:200px;
+height:200px;
+top:450px;
+left:-40px;
+}
+
+section#prog article.texto h2 {
+  
+
+  position:absolute;
+  width:500px;
+  font-family:'Manjari', sans-serif;
+  text-align:center;
+  font-size:40pt;
+  top:490px;
+  color:#458B74;
+  left:270px;
+
+}
+
+
+/*fecha sessão*/
+
+/*footer*/
+
+footer.rodape h1{
+
+padding-bottom:310px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:33pt;
+color:cyan;
+top:-60px;
+left:-30px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:30pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+left:-200px;
+top:-80px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+top:-225px;
+left:180px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:90.8%;
+left:-10px;
+top:1090px;
+}
+/*fecha sessão*/
+
+
+/*altura do menu responsivo*/
+
+header.full2 nav {
+
+  height:180px;
+
+}
+
+header.full2{
+  
+  display:block;
+  position:relative;
+  top:-5690px;
+}
+
+/*desaparece menu que fica encima do nav*/
+
+header.full1{
+  
+  display:block;
+  position:absolute;
+  top:-2000px;
+
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+
+
+
+}
+
+a:hover{
+
+  opacity:0.7;
+}
+
+.logo2{
+ font-size:24px;
+ text-transform:uppercase;
+ letter-spacing:7px;
+ 
+}
+
+.nav2{
+
+  position:relative;
+  display:flex;
+  height:50vh;
+  width:100vw;
+  background:#0c0c0c;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  font-size:45pt;
+  transform:translateY(1400px);      /*nav escondida */
+  transition:transform 0.3s ease-in;
+  padding-top:120px;
+  padding-bottom:100px;
+  margin-top:200px;
+  top:1700px;
+
+
+}
+
+.nav2.active{                       /*active é uma classe que vai ser usada no js*/
+  
+  transform:translateY(2380px);     /*nav sendo mostrada */
+  
+}
+
+
+.nav2 li{
+  margin-top:-1680px; /* esconde os links */
+  margin-left:0px;
+  background-image:url("img/back3.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position top:300px;
+  padding:40px;
+
+}
+
+
+
+1
+
+.mobile2{
+
+display:block;
+cursor:pointer;
+}
+
+
+
+.mobile2 div{
+position:relative;
+display:flex;
+width:100px;
+height:20px;
+border-radius:10px;
+background:#87CEEB;
+margin:8px;
+border:none;
+transition:0.3s;
+left:340px;
+}
+
+/*animação hamburger*/
+
+
+
+@keyframes linkFade{             /*animação links */
+ 
+
+to{
+
+opacity:1;
+transform:translateY(870px);
+
+
+}
+
+
+}
+
+
+/*animação menu hamburger*/
+
+.mobile2.active .l1{
+
+transform: rotate(-45deg) translate(-8px,8px);
+background:#ee1160;
+}
+
+.mobile2.active .l2{
+
+opacity:0;
+
+}
+.mobile2.active .l3{
+
+transform: rotate(43deg) translate(-15px,-18.5px);
+background:#ee1160;
+}
+  }
+
+/*para telas com alturas(height) menores como microsoft lumia 550*/
+
+@media screen and (max-height:1024px) {
+
+
+
+  div.radios2  input{
+  position:relative;
+  appearance:none;
+  padding:30px;
+  display:block;
+  width:50px;
+  height:50px;
+  margin:40px;
+  background:grey;
+  top:-350px;
+  left:390px;
+}
+
+
+
+div.radios2 input:checked{
+  appearance:none;
+  width:60px;
+  height:60px;
+}
+
+
+
+.nav2{
+
+padding-top:300px;
+padding-bottom:450px;
+
+
+}
+
+.nav2 li{
+ 
+  position:relative;
+  margin-top:80px;
+  top:-880px;
+
+}
+
+
+
+}
+
+
+
+</style>
+  
+</head>
+ 
+<body id="bosta">
+<!--mapas-->
+
+<section id="ball">
+
+<h1>Espaço</h1>
+
+<h3 class="ilhas">Mapas</h3>
+
+<img class="ilha" src="img/0.png"/>
+<img class="ilha1" src="img/1.png"/>
+<img class="ilha2" src="img/2.png"/>
+<img class="ilha3" src="img/3.png"/>
+<img class="ilha4" src="img/4.png"/>
+
+<article class="texto">
+<h2 class="tx"> 
+No jogo existem 5 diferentes mapas onde os 
+ambientes e dificuldade mudam completamente!
+Cada ilha contém duas etapas onde você terá que 
+atravessar até a proxima ilha.</br></br>
+As ilhas são: Cyber Town ,  Cemetery , Construction ,
+Latin tribe e Castle. 
+
+</h2>
+
+
+
+</section>
+
+<!--mapas-->
+<!--patentes-->
+
+<section id="prog">
+
+<h1>Espaço</h1>
+<img  src="img/transp.png"/>
+
+<article class="texto">
+
+<h3 class="titulo">&nbsp &nbsp Bandeiras e <br>patentes</h3>
+<h2 class="tx"> 
+
+No BallTown você poderá ser um mestre! 
+Você poderá evoluir para diferentes patentes que existem no jogo, 
+será que você é capaz de se tornar um mestre?</br></br>
+Também você poderá ser premiado com bandeiras após
+atingir os pontos necessários.
+
+</h2>
+
+</article>
+
+
+</section>
+
+<!--patentes-->
+
+
+<!--final-->
+
+<section id="final">
+
+<h1>Espaço</h1>
+<img  src="img/transp.png"/>
+
+<article class="texto">
+
+
+
+<a href="https://play.google.com/store/apps/details?id=com.jl.balltown&hl=en_US&gl=US" target="_blank"><button class="s1">Download</button></a>
+<a href="https://play.google.com/store/apps/details?id=com.jl.jogos2d&hl=en_US&gl=US" target="_blank"><button class="s2">Download</button></a>
+
+
+</article>
+</section>
+
+<!--final-->
+
+<!--skin-->
+
+<section id="ps">
+
+<h1>Espaço</h1>
+<img  src="img/transp.png"/>
+
+<article class="texto">
+
+<h3 class="titulo">Skins</h3>
+<h2>
+No jogo você poderá mudar a skin da sua esfera de acordo com cada Ambiente.
+  <br>
+  <br>
+Escolha sua skin para enfrentar seu desafio durante o jogo !
+</h2>
+
+
+</article>
+
+</section>
+
+<!--skin-->
+<!--topo-->
+
+<section id="topo2">
+
+
+<h1>Espaço</h1>
+<img src="img/titulo.png" class="jl"/>
+
+
+</article>
+
+</section>
+
+<!--topo-->
+
+
+<header id="topo">
+
+<h1>Espaço</h1>
+<img src="img/transp.png" class="jl"/>
+
+<!--Radios-->
+
+<div class="radios">
+<input type="radio" id="r1" onclick="first();" checked/>
+<input type="radio" id="r2" onclick="second();"/>
+<input type="radio" id="r3" onclick="third();"/>
+<input type="radio" id="r4" onclick="forth();"/>
+<input type="radio" id="r5" onclick="fifth();"/>
+</div>
+
+<!--Radios MOBILE-->
+<div class="radios2">
+<input type="radio" id="r10" onclick="first();" checked/>
+<input type="radio" id="r20" onclick="second2();"/>
+<input type="radio" id="r30" onclick="third();"/>
+<input type="radio" id="r40" onclick="forth();"/>
+<input type="radio" id="r50" onclick="fifth();"/>
+</div>
+
+</header>
+
+<script src="input2.js"></script>
+
+
+
+
+
+<!--first menu-->
+
+<header class="full">  
+<nav>
+
+
+<img  id="icon" src="img/icon.png"/>
+
+
+
+<div class="mobile">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+<ul class="nav">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+
+
+</ul>
+
+</header>
+
+</nav>
+
+
+<!--second menu-->
+
+
+<header class="full1">  
+<nav>
+
+
+<ul class="nav2">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+
+</ul>
+
+</header>
+
+</nav>
+
+
+<header class="full2">  
+<nav>
+
+<img  id="icon" src="img/icon.png"/>
+
+
+<div class="mobile2">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+</header>
+
+</nav>
+
+<footer class="rodape">
+<h3 id="acess"> Acesse também :</h3>
+<h1>Espaço</h1>
+<a href="https://play.google.com/store/apps/developer?id=JL+Desenvolvedores" target="_blank"><img  id="gp" src="img/gp2.png"/></a>
+<a href="https://www.youtube.com/channel/UC_1ELvJeqDve3ckNsCM0-5g" target="_blank"><img  id="yt" src="img/yt2.png"/></a>
+
+<h3> <img src="img/copy.png"/> <span id="ano"></span> Desenvolvido por</br> 
+JL desenvolvedores</h3>
+
+</footer>
+<script src="js.js"></script>
+
+</body>
+</html>

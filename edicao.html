@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    
+  <title>Edição</title>
+
+<meta  charset="UTF-8"/>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<link rel="icon" href="iconag.ico" type="img/x-icon" />
+<link rel="shortcut icon" href="iconag.ico" type="img/x-icon" />
+
+
+<style>
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body{
+
+overflow-x: hidden;
+height:700px;
+background-image:url("img/ground2.png");
+
+}
+
+
+div.dados button{
+
+  position:relative;
+  font-family:'Manjari', sans-serif;
+  font-size:25pt;
+  display: block;
+  padding: 15px;
+  border:solid #87CEFA;
+  background: transparent; 
+  border-radius:20px;
+  color:#87CEFA;
+  text-align: center;
+  text-decoration: none;
+  top:0px;
+  left:300px;
+  transition:0.3s;
+  cursor:pointer;
+
+}
+
+
+div.dados article.texto button:hover{
+ 
+ border:solid springgreen;
+ border-radius:35px;
+ color:springgreen;
+ transition:0.3s;
+
+}
+
+
+div.dados{
+width:510px;
+height:300px;
+margin-left:50px;
+margin-top:50px;
+display:block;
+position:relative;
+padding:40px;
+float:center;
+top:650px;
+left:330px;
+background:#EEE9E9;
+border-radius:70px;
+border:springgreen solid 20px;
+border-top:none;
+border-bottom:none;
+border-right:none;
+
+}
+
+div.dados img.icon{
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  top:100px;
+  left:0px;
+  width:90px;
+  height:90px;
+  border-radius:20px;
+}
+
+
+div.dados h3.titulo{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:30pt;
+top:-50px;
+color:#2E8B57;
+left:120px;
+text-indent:20px;
+}
+
+
+div.dados article.texto h2 {
+  
+  display:flex;
+  flex-direction:column;
+  font-family:'Manjari', sans-serif;
+  position:relative;
+  width:400px;
+  text-align:left;
+  top:-20px;
+  font-size:15pt;
+  color:#6C7B8B;
+  left:120px;
+  text-indent:20px;
+}
+
+
+
+img#icon{
+position:relative;
+width:80px;
+height:80px;
+left:-65px;
+top:-6px;
+}
+
+header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:370px;
+  height:190px;
+  top:-120px;
+  left:-60px;
+
+  }
+
+header#topo{
+
+position:absolute;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/first.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:95.6%;
+left:-10px;
+top:80px;
+
+}
+
+
+header#topo h1{
+
+padding-bottom:220px;
+opacity:0;
+
+}
+
+
+/*rodape footer*/
+
+footer.rodape h1{
+
+padding-bottom:220px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:cyan;
+top:-40px;
+left:-30px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+left:-170px;
+top:-100px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+top:-200px;
+left:80px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:95.6%;
+left:-10px;
+top:850px;
+
+}
+
+
+
+
+
+/*menu responsivo*/
+
+* {
+
+margin:0;
+padding:0;
+list-style-type:none;
+}
+
+
+header.full{
+ 
+  position:absolute;
+  top:1710px;
+  width:1380px;
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+}
+
+a:hover{
+
+  opacity:0.7;
+  color:#ee1160;
+}
+
+
+nav{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+font-family: 'Manjari', sans-serif;
+background:#0c0c0c;
+height:15vh;/* vh = viewport height*/
+font-size:20pt;
+top:-1710px;
+
+}
+
+.nav{
+
+  display:flex;
+}
+
+.nav li{
+position:relative;
+letter-spacing:4px;
+margin-left:32px;
+left:-24px;
+top:-8px;
+
+}
+
+/*responsive part*/
+
+.mobile div{
+
+  display:none;
+  width:32px;
+  height:2px;
+  background:white;
+  margin:8px;
+
+}
+
+.mobile{
+
+  cursor:pointer;
+}
+
+/*desaparece os dois menus responsivos*/
+
+header.full1{
+  display:none;
+}
+header.full2{
+  display:none;
+}
+
+
+@media screen and (max-width: 1236px) {
+
+/*desaparece os dois menus responsivos*/
+header.full1{
+  display:none;
+}
+  
+header.full2{
+  display:none;
+}
+
+
+header#topo{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/first.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-500px;
+}
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+
+
+  div.dados button{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:45pt;
+display: block;
+padding: 15px;
+border:solid #87CEFA;
+background: transparent; 
+border-radius:20px;
+color:#87CEFA;
+text-align: center;
+text-decoration: none;
+top:0px;
+left:300px;
+transition:0.3s;
+cursor:pointer;
+
+}
+
+
+div.dados article.texto button:hover{
+
+border:solid springgreen;
+border-radius:35px;
+color:springgreen;
+transition:0.3s;
+
+}
+
+
+div.dados{
+width:710px;
+height:550px;
+margin-left:50px;
+margin-top:50px;
+display:block;
+position:relative;
+padding:40px;
+float:center;
+top:1500px;
+left:26px;
+background:#EEE9E9;
+border-radius:70px;
+border:springgreen solid 20px;
+border-top:none;
+border-bottom:none;
+border-right:none;
+
+}
+
+div.dados img.icon{
+display:flex;
+flex-direction:column;
+position:relative;
+top:100px;
+left:0px;
+width:130px;
+height:130px;
+border-radius:20px;
+}
+
+
+div.dados h3.titulo{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:50pt;
+top:-80px;
+color:#2E8B57;
+left:160px;
+text-indent:20px;
+}
+
+
+div.dados article.texto h2 {
+
+display:flex;
+flex-direction:column;
+font-family:'Manjari', sans-serif;
+position:relative;
+width:550px;
+text-align:left;
+top:-40px;
+font-size:30pt;
+color:#6C7B8B;
+left:160px;
+text-indent:20px;
+}
+
+
+
+img#icon{
+position:absolute;
+width:130px;
+height:130px;
+left:15px;
+top:5px;
+}
+
+  header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  top:300px;
+  left:-30px;
+  width:650px;
+  height:360px; 
+  }
+
+
+
+/*desaparece menu tela grande*/
+
+
+header.full{
+  display:none;
+}
+
+  header#topo{
+  
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/first.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  padding-left:100px;
+  color:white;
+  width:92.8%;
+  left:-10px;
+  top:0vh;
+  height:1500px;
+  
+  }
+ 
+header#topo h1{
+
+padding-bottom:300px;
+opacity:0;
+
+}
+
+
+
+/*footer*/
+
+footer.rodape h1{
+
+padding-bottom:300px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:33pt;
+color:cyan;
+top:-60px;
+left:-30px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:30pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+left:-200px;
+top:-80px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+top:-225px;
+left:180px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.5%;
+left:-10px;
+top:1900px;
+}
+/*fecha sessão*/
+
+
+/*altura do menu responsivo*/
+
+header.full2 nav {
+
+  height:180px;
+
+}
+
+header.full2{
+  
+  display:block;
+  position:absolute;
+  top:1700px;
+  width:1000px;
+}
+
+/*desaparece menu que fica encima do nav*/
+
+header.full1{
+  
+  display:block;
+  position:absolute;
+  top:-2000px;
+
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+
+
+
+}
+
+a:hover{
+
+  opacity:0.7;
+}
+
+.logo2{
+ font-size:24px;
+ text-transform:uppercase;
+ letter-spacing:7px;
+ 
+}
+
+.nav2{
+
+  position:relative;
+  display:flex;
+  height:50vh;
+  width:101vw;
+  background:#0c0c0c;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  font-size:45pt;
+  transform:translateY(1400px);      /*nav escondida */
+  transition:transform 0.3s ease-in;
+  padding-top:120px;
+  padding-bottom:100px;
+  margin-top:200px;
+  top:1700px;
+
+
+}
+
+.nav2.active{                       /*active é uma classe que vai ser usada no js*/
+  
+  transform:translateY(2380px);     /*nav sendo mostrada */
+  
+}
+
+
+.nav2 li{
+  margin-top:-1680px; /* esconde os links */
+  margin-left:0px;
+  background-image:url("img/back3.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position top:300px;
+  padding:40px;
+
+}
+
+
+
+
+.mobile2{
+
+display:block;
+cursor:pointer;
+}
+
+
+
+.mobile2 div{
+position:relative;
+display:flex;
+width:100px;
+height:20px;
+border-radius:10px;
+background:#87CEEB;
+margin:8px;
+border:none;
+transition:0.3s;
+left:340px;
+}
+
+/*animação hamburger*/
+
+
+
+@keyframes linkFade{             /*animação links */
+ 
+
+to{
+
+opacity:1;
+transform:translateY(870px);
+
+
+}
+
+
+}
+
+
+/*animação menu hamburger*/
+
+.mobile2.active .l1{
+
+transform: rotate(-45deg) translate(-8px,8px);
+background:#ee1160;
+}
+
+.mobile2.active .l2{
+
+opacity:0;
+
+}
+.mobile2.active .l3{
+
+transform: rotate(43deg) translate(-15px,-18.5px);
+background:#ee1160;
+}
+  }
+
+/*para telas com alturas(height) menores como microsoft lumia 550*/
+
+@media screen and (max-height:1024px) {
+
+
+  .nav2.active{                       /*active é uma classe que vai ser usada no js*/
+  
+  transform:translateY(3590px);     /*nav sendo mostrada */
+  
+}
+
+.nav2{
+
+padding-top:300px;
+padding-bottom:2300px;
+top:-200px;
+
+}
+
+.nav2 li{
+ 
+  position:relative;
+  margin-top:80px;
+  top:950px;
+
+}
+
+
+
+
+}
+
+
+</style>
+  
+</head>
+ 
+<body >
+
+
+
+
+<div class='dados'> <img src='img/iconph.png' class='icon'/>
+<article class='texto'>
+<h3 class='titulo'>Sobre o Photoshop</h3>
+<h2 class='tx'>Falaremos um pouco sobre o Photoshop a sua história e para que serve.
+</h2> <a href="https://jldesenvolvedores.000webhostapp.com/photo.php" target=_blank><button>Acessar</button></a> </article>
+</div><br>
+
+
+
+
+
+
+</section>
+
+
+
+
+<header id="topo">
+<h1>Espaço</h1>
+<img src="img/edi.png" class="jl"/>
+
+</header>
+
+
+<script src="input1.js"></script>
+
+
+<!--first menu-->
+
+<header class="full">  
+<nav>
+
+
+<img  id="icon" src="img/icon.png"/>
+
+
+
+<div class="mobile">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+<ul class="nav">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+</ul>
+
+</header>
+
+</nav>
+
+
+<!--second menu-->
+
+
+<header class="full1">  
+<nav>
+
+
+<ul class="nav2">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+</ul>
+
+</header>
+
+</nav>
+
+
+<header class="full2">  
+<nav>
+
+<img  id="icon" src="img/icon.png"/>
+
+
+<div class="mobile2">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+</header>
+
+</nav>
+
+<footer class="rodape">
+<h3 id="acess"> Acesse também :</h3>
+<h1>Espaço</h1>
+<a href="https://play.google.com/store/apps/developer?id=JL+Desenvolvedores" target="_blank"><img  id="gp" src="img/gp2.png"/></a>
+<a href="https://www.youtube.com/channel/UC_1ELvJeqDve3ckNsCM0-5g" target="_blank"><img  id="yt" src="img/yt2.png"/></a>
+
+<h3> <img src="img/copy.png"/> <span id="ano"></span> Desenvolvido por</br> 
+JL desenvolvedores</h3>
+
+</footer>
+
+<script src="js.js"></script>
+</body>
+</html>

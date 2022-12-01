@@ -1,0 +1,1358 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    
+  <title>Photoshop</title>
+
+<meta  charset="UTF-8"/>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<link rel="icon" href="iconag.ico" type="img/x-icon" />
+<link rel="shortcut icon" href="iconag.ico" type="img/x-icon" />
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body{
+
+overflow-x: hidden;
+height:700px;
+background-image:url("img/groundphone2.jpg");
+
+
+}
+
+span#destaque{
+
+font-family:'Manjari', sans-serif;
+font-size:18pt;
+color:#66CDAA;
+
+}
+
+ h3.titulo2{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:46pt;
+color:#66CDAA;
+top:680px;
+margin-left:300px;
+
+
+  }
+
+h3.titulo3{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:46pt;
+color:#66CDAA;
+top:1440px;
+margin-left:550px;
+
+
+  }
+
+h3.titulo4{
+display:block;
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:46pt;
+color:#66CDAA;
+top:2410px;
+margin-left:355px;
+
+}
+
+h3.titulo4mobile{
+
+display:none;
+
+}
+h3.titulo5{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:46pt;
+color:#66CDAA;
+top:2690px;
+margin-left:500px;
+
+}
+
+
+img#inicio{
+ 
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  top:1190px;
+  border-radius:20px;
+  left:340px;
+}
+img#ex{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:160px;
+ width:600px;
+ left:50px;
+ border-radius:15px;
+}
+
+img#inter{
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:3760px;
+ left:400px;
+ border-radius:15px;
+}
+span#inter{
+
+ position:absolute;
+ font-family:'Manjari', sans-serif;
+ top:3738px;
+ left:400px;
+ font-size:16pt;
+ color:#66CDAA;
+}
+
+
+img#lee{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:1558px;
+ left:0px;
+ border-radius:40px;
+ width:300px;
+ height:400px:
+}
+
+
+
+img#lee2{
+ 
+ display:none;
+
+}
+
+img#html{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:2519px;
+ left:1040px;
+ border-radius:10px;
+ width:300px;
+ height:400px:
+}
+
+
+span#tim{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:1544px;
+ left:18px;
+ font-family:'Manjari', sans-serif;
+ font-size:12pt;
+ color:#66CDAA;
+}
+
+ h2.para1 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:17pt;
+  top:850px;
+  line-height: 30px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+ h2.para2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:17pt;
+  top:1610px;
+  line-height: 30px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+
+ h2.para3 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:17pt;
+  top:2650px;
+  line-height: 30px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+
+h2.para4 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:17pt;
+  top:3020px;
+  line-height: 30px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+h2.para3 span{
+  
+  font-family:'Manjari', sans-serif;
+  font-size:17pt;
+  color:#5F9EA0;
+
+}
+
+
+img#icon{
+position:relative;
+width:80px;
+height:80px;
+left:-65px;
+top:-6px;
+}
+
+header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:370px;
+  height:190px;
+  top:-120px;
+  left:-60px;
+
+  }
+
+header#topo h2.titulo{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:56pt;
+color:#66CDAA;
+top:-180px;
+left:-50px;
+
+
+  }
+
+
+header#topo{
+
+position:absolute;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/photo.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:95.6%;
+left:-10px;
+top:80px;
+
+}
+
+
+header#topo h1{
+
+padding-bottom:320px;
+opacity:0;
+
+}
+
+
+/*rodape footer*/
+
+footer.rodape h1{
+
+padding-bottom:220px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:cyan;
+top:-40px;
+left:-30px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+left:-170px;
+top:-100px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+top:-200px;
+left:80px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:95.6%;
+left:-10px;
+top:4100px;
+
+}
+
+
+
+
+
+/*menu responsivo*/
+
+* {
+
+margin:0;
+padding:0;
+list-style-type:none;
+}
+
+
+header.full{
+ 
+  position:absolute;
+  top:1710px;
+  width:1380px;
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+}
+
+a:hover{
+
+  opacity:0.7;
+  color:#ee1160;
+}
+
+
+nav{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+font-family: 'Manjari', sans-serif;
+background:#0c0c0c;
+height:15vh;/* vh = viewport height*/
+font-size:20pt;
+top:-1710px;
+
+}
+
+.nav{
+
+  display:flex;
+}
+
+.nav li{
+position:relative;
+letter-spacing:4px;
+margin-left:32px;
+left:-24px;
+top:-8px;
+
+}
+
+/*responsive part*/
+
+.mobile div{
+
+  display:none;
+  width:32px;
+  height:2px;
+  background:white;
+  margin:8px;
+
+}
+
+.mobile{
+
+  cursor:pointer;
+}
+
+/*desaparece os dois menus responsivos*/
+
+header.full1{
+  display:none;
+}
+header.full2{
+  display:none;
+}
+
+
+@media screen and (max-width: 1236px) {
+
+/*desaparece os dois menus responsivos*/
+header.full1{
+  display:none;
+}
+  
+header.full2{
+  display:none;
+}
+
+
+header#topo{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/first.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-500px;
+}
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+
+span#destaque{
+
+font-family:'Manjari', sans-serif;
+font-size:38pt;
+color:#66CDAA;
+
+}
+
+ h3.titulo2{
+
+display:none;
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:140px;
+margin-left:600px;
+
+ }
+
+ h3.titulo2mobile{
+
+display:block;
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:140px;
+margin-left:330px;
+
+ }
+
+h3.titulo3{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:1600px;
+margin-left:430px;
+
+
+  }
+
+h3.titulo4{
+display:none;
+
+}
+h3.titulo4mobile{
+
+display: block;  
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:5120px;
+margin-left:445px;
+
+}
+
+
+h3.titulo5{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:5800px;
+margin-left:390px;
+
+}
+
+
+h3.titulo52{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:76pt;
+color:#66CDAA;
+top:7060px;
+margin-left:530px;
+
+}
+
+
+img#inicio{
+ 
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  top:1440px;
+  left:340px;
+  width:800px;
+}
+img#ex{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:390px;
+ width:980px;
+ left:-95px;
+}
+
+
+img#lee{
+ 
+ display:none;
+
+}
+
+img#lee2{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:2408px;
+ left:970px;
+ border-radius:10px;
+ width:290px;
+ height:350px:
+}
+
+
+img#html{
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:5750px;
+ left:900px;
+ border-radius:10px;
+ width:350px;
+ height:400px:
+}
+
+img#inter{
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:7860px;
+ left:250px;
+ width:1000px;
+ border-radius:15px;
+}
+span#inter{
+
+ position:absolute;
+ font-family:'Manjari', sans-serif;
+ top:7800px;
+ left:250px;
+ font-size:36pt;
+ color:#66CDAA;
+}
+
+span#tim{
+ 
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ top:2800px;
+ left:1090px;
+ font-family:'Manjari', sans-serif;
+ font-size:22pt;
+ color:#66CDAA;
+}
+
+ h2.para1 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:800px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:37pt;
+  top:450px;
+  line-height: 50px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+ h2.para2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:37pt;
+  top:2110px;
+  line-height: 50px;
+  color:#696969;
+  left:300px;
+  text-indent:20px;
+}
+
+
+ h2.para3 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:700px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:37pt;
+  top:5700px;
+  line-height: 50px;
+  color:#696969;
+  left:300px;
+  text-indent:20px;
+}
+
+
+h2.para4 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:850px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:37pt;
+  top:6520px;
+  line-height: 50px;
+  color:#696969;
+  left:360px;
+  text-indent:20px;
+}
+
+h2.para3 span{
+  
+  font-family:'Manjari', sans-serif;
+  font-size:37pt;
+  color:#5F9EA0;
+
+}
+
+
+header#topo h2.titulo{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:86pt;
+color:#66CDAA;
+top:340px;
+left:-30px;
+
+
+  }
+
+  div.dados button{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:45pt;
+display: block;
+padding: 15px;
+border:solid #87CEFA;
+background: transparent; 
+border-radius:20px;
+color:#87CEFA;
+text-align: center;
+text-decoration: none;
+top:0px;
+left:300px;
+transition:0.3s;
+cursor:pointer;
+
+}
+
+
+div.dados article.texto button:hover{
+
+border:solid springgreen;
+border-radius:35px;
+color:springgreen;
+transition:0.3s;
+
+}
+
+
+div.dados{
+width:710px;
+height:550px;
+margin-left:50px;
+margin-top:50px;
+display:block;
+position:relative;
+padding:40px;
+float:center;
+top:1500px;
+left:-300px;
+
+}
+
+div.dados img.icon{
+display:flex;
+flex-direction:column;
+position:relative;
+top:100px;
+left:0px;
+width:130px;
+height:130px;
+border-radius:20px;
+}
+
+
+div.dados h3.titulo{
+
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:50pt;
+top:-80px;
+color:#2E8B57;
+left:160px;
+text-indent:20px;
+}
+
+
+div.dados article.texto h2 {
+
+display:flex;
+flex-direction:column;
+font-family:'Manjari', sans-serif;
+position:relative;
+width:550px;
+text-align:left;
+top:-40px;
+font-size:30pt;
+color:#6C7B8B;
+left:160px;
+text-indent:20px;
+}
+
+img#icon{
+position:absolute;
+width:130px;
+height:130px;
+left:15px;
+top:5px;
+}
+
+  header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  top:300px;
+  left:-30px;
+  width:650px;
+  height:360px; 
+  }
+
+
+
+/*desaparece menu tela grande*/
+
+
+header.full{
+  display:none;
+}
+
+  header#topo{
+  
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/mobile/mobilep.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  padding-left:100px;
+  color:white;
+  width:92.8%;
+  left:-10px;
+  top:0vh;
+  height:1500px;
+  
+  }
+ 
+header#topo h1{
+
+padding-bottom:300px;
+opacity:0;
+
+}
+
+
+
+/*footer*/
+
+footer.rodape h1{
+
+padding-bottom:300px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:33pt;
+color:cyan;
+top:-100px;
+left:-40px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:30pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+left:-200px;
+top:-80px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+top:-225px;
+left:180px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.5%;
+left:-10px;
+top:9900px;
+}
+/*fecha sessão*/
+
+
+/*altura do menu responsivo*/
+
+header.full2 nav {
+
+  height:180px;
+
+}
+
+header.full2{
+  
+  display:block;
+  position:absolute;
+  top:1700px;
+  width:1000px;
+}
+
+/*desaparece menu que fica encima do nav*/
+
+header.full1{
+  
+  display:block;
+  position:absolute;
+  top:-2000px;
+
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+
+
+
+}
+
+a:hover{
+
+  opacity:0.7;
+}
+
+.logo2{
+ font-size:24px;
+ text-transform:uppercase;
+ letter-spacing:7px;
+ 
+}
+
+.nav2{
+
+  position:relative;
+  display:flex;
+  height:50vh;
+  width:101vw;
+  background:#0c0c0c;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  font-size:45pt;
+  transform:translateY(1400px);      /*nav escondida */
+  transition:transform 0.3s ease-in;
+  padding-top:120px;
+  padding-bottom:100px;
+  margin-top:200px;
+  top:1700px;
+
+
+}
+
+.nav2.active{                       /*active é uma classe que vai ser usada no js*/
+  
+  transform:translateY(2380px);     /*nav sendo mostrada */
+  
+}
+
+
+.nav2 li{
+  margin-top:-1680px; /* esconde os links */
+  margin-left:0px;
+  background-image:url("img/back3.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position top:300px;
+  padding:40px;
+
+}
+
+
+
+
+.mobile2{
+
+display:block;
+cursor:pointer;
+}
+
+
+
+.mobile2 div{
+position:relative;
+display:flex;
+width:100px;
+height:20px;
+border-radius:10px;
+background:#87CEEB;
+margin:8px;
+border:none;
+transition:0.3s;
+left:340px;
+}
+
+/*animação hamburger*/
+
+
+
+@keyframes linkFade{             /*animação links */
+ 
+
+to{
+
+opacity:1;
+transform:translateY(870px);
+
+
+}
+
+
+}
+
+
+/*animação menu hamburger*/
+
+.mobile2.active .l1{
+
+transform: rotate(-45deg) translate(-8px,8px);
+background:#ee1160;
+}
+
+.mobile2.active .l2{
+
+opacity:0;
+
+}
+.mobile2.active .l3{
+
+transform: rotate(43deg) translate(-15px,-18.5px);
+background:#ee1160;
+}
+  }
+
+/*para telas com alturas(height) menores como microsoft lumia 550*/
+
+@media screen and (max-height:1024px) {
+
+
+  .nav2.active{                       /*active é uma classe que vai ser usada no js*/
+  
+  transform:translateY(3590px);     /*nav sendo mostrada */
+  
+}
+
+.nav2{
+
+padding-top:300px;
+padding-bottom:2300px;
+top:-200px;
+
+}
+
+.nav2 li{
+ 
+  position:relative;
+  margin-top:80px;
+  top:950px;
+
+}
+
+
+}
+
+
+</style>
+  
+</head>
+ 
+<body >
+
+
+<div class='dados'> 
+
+
+<h3 class="titulo2">Um pouco sobre o photoshop</h3>
+<h3 class="titulo2mobile">Sobre o photoshop</h3>
+<h2 class="para1"> 
+Você com certeza todos os dias vê cartazes de logotipos de marcas,propaganda,vetores de todos os tipos,você pode ter certeza
+que a chance deles terem sido feito ou editado no Phothoshop é muito grande já que é considerado o líder no mercado 
+dos editores de imagem profissionais,é usado por fotógrafos, designers, profissionais da web e de vídeo.Qualquer tipo de 
+retoque que você queira fazer em uma fotografia por exemplo você irá conseguir.
+
+<br>
+<br>
+Veremos nesse artigo um pouco da história desse programa muito útil tempos atrás e na atualidade.
+</h2>
+
+<img id="inicio" src="img/paginas/animals.jpg"/>
+
+<!-- p2 -->
+
+<h3 class="titulo3">Surgimento</h3>
+
+<h2 class="para2"> 
+O Photoshop surgiu em 1990,a primeira versão já se via um grande potencial , inicialmente ele era usado para retoques em 
+imagens digitalizadas por scanner(Imagens em papel que uma impressora escaneava e "copiava" a imagem para se transformar em uma imagem digital).
+<br>
+<br>
+O software é desenvolvido pela Adobe Systems e é disponível para os sistemas operativos Microsoft Windows e Mac OS X.
+<br>
+<br>
+O Photoshop também suporta edição com outros tipos de programas da Adobe, especializados em determinadas áreas:
+ o já referido Adobe ImageReady (edição de imagens para a web), Adobe InDesign (edição de texto) Adobe Illustrator (edição de gráficos vectoriais), Adobe Premiere (edição de ), 
+ Adobe After Effects (edição de efeitos especiais em vídeo) e o Adobe Encore DVD (edição destinada a DVDs). 
+Os formatos de arquivos nativos do Photoshop (PSD ou PDD) podem ser usados entre estes programas.
+<br>
+<br>
+O software Photoshop foi desenvolvido em 1987, por Thomas Knoll, na Califórnia,
+Estados Unidos. Knoll estava em casa trabalhando em sua tese de doutorado, quando criou um código em seu computador 
+que exibia imagens em tons de cinza em um monitor de bitmap preto e branco. Como o código não estava
+diretamente relacionado à sua tese de doutorado, Knoll subestimou o seu valor. Mal sabia ele que 
+era o primeiro esboço do fenômeno Photoshop.
+
+Só mais tarde, quando seu irmão John Knoll, que na época já 
+trabalhava na ILM (Industrial Light & Magic), se encantou pelo 
+programa, que ele percebeu seu potencial. Ambos trabalharam juntos para 
+desenvolvê-lo e em 1990 o viram lançado pela Adobe, que havia comprado o programa.
+<br>
+<br>
+<br>
+<!-- p3-->
+
+<h3 class="titulo4">Versões do Phothoshop</h3>
+
+<h3 class="titulo4mobile">Versões</h3>
+<h2 class="para3"> 
+
+Sua Primeira versão foi a 0.62 em	outubro de 1988, depois disso o programa foi evoluindo 
+gradativamente ao longo dos anos,incluindo varias outras sofisticadas ferramentes de retoques e 
+criação de traços.Sua última versão é CC 15.0(creative clouds) de 2018.
+<br>
+<br>
+<br>
+</h2>
+<!-- p4 -->
+
+<h3 class="titulo5">Ferramentas</h3>
+
+
+<h2 class="para4"> 
+
+<img id="ex" src="img/paginas/ferramenta.jpg"/>
+
+A JL Desemvolvedores como milhares usa o Photoshop nas suas criações, em montagens grafícas , animações , logos  e edições em geral.Abaixo 
+está o nome das principais ferramentas do Photoshop e sua interface.
+
+</h2>
+<img id="lee" src="img/paginas/mps.png"/>
+<img id="lee2" src="img/mobile/mps2.png"/>
+<img id="inter" src="img/paginas/inter.jpg"/>
+<span id="inter">Interface</span>
+<img id="html" src="img/paginas/psold.png"/>
+<span id="tim" >Montagem no Photoshop</span>
+
+</div>
+
+
+</section>
+
+
+
+
+<header id="topo">
+<h1>Espaço</h1>
+<h2 class="titulo">Photoshop</h2>
+
+</header>
+
+
+<script src="input1.js"></script>
+
+
+<!--first menu-->
+
+<header class="full">  
+<nav>
+
+
+<img  id="icon" src="img/icon.png"/>
+
+
+
+<div class="mobile">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+<ul class="nav">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+
+</ul>
+
+</header>
+
+</nav>
+
+
+<!--second menu-->
+
+
+<header class="full1">  
+<nav>
+
+
+<ul class="nav2">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+
+</ul>
+
+</header>
+
+</nav>
+
+
+<header class="full2">  
+<nav>
+
+<img  id="icon" src="img/icon.png"/>
+
+
+<div class="mobile2">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+</header>
+
+</nav>
+
+<footer class="rodape">
+<h3 id="acess"> Acesse também :</h3>
+<h1>Espaço</h1>
+<a href="https://play.google.com/store/apps/developer?id=JL+Desenvolvedores" target="_blank"><img  id="gp" src="img/gp2.png"/></a>
+<a href="https://www.youtube.com/channel/UC_1ELvJeqDve3ckNsCM0-5g" target="_blank"><img  id="yt" src="img/yt2.png"/></a>
+
+<h3> <img src="img/copy.png"/> <span id="ano"></span> Desenvolvido por</br> 
+JL desenvolvedores</h3>
+
+</footer>
+
+<script src="js.js"></script>
+</body>
+</html>

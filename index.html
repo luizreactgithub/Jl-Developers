@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    
+  <title>JL Desenvolvedores</title>
+
+<meta  charset="UTF-8"/>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<link rel="icon" href="iconag.ico" type="img/x-icon" />
+<link rel="shortcut icon" href="iconag.ico" type="img/x-icon" />
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body{
+
+overflow-x: hidden;
+height:700px;
+
+}
+
+div.radios2{
+display:none;
+}
+div.radios{
+display:block;
+}
+
+
+div.radios input{
+  position:relative; 
+  appearance:none;
+  display:block;
+  width:30px;
+  height:30px;
+  margin:20px;
+  top:-150px;
+  left:580px;
+  background:grey;
+  border:solid #87CEFA;
+  background: transparent; 
+  border-radius:15px;
+  
+}
+div.radios input:before{/*aqui ele mostra o selecionado*/
+content:'';
+}
+
+
+
+
+img#icon{
+position:relative;
+width:80px;
+height:80px;
+left:-60px;
+
+}
+
+header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:390px;
+  height:160px;
+  top:10px;
+  left:-50px;
+
+  }
+
+header#topo{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/first.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-2580px;
+
+}
+
+
+header#topo h1{
+
+padding-bottom:120px;
+opacity:0;
+
+}
+
+
+/*rodape footer*/
+
+footer.rodape h1{
+
+padding-bottom:220px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:cyan;
+top:-40px;
+left:-30px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:16pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+left:-170px;
+top:-100px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:200px;
+height:70px;
+top:-200px;
+left:80px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-510px;
+
+}
+
+/*sessão balltown*/
+
+article.texto button{
+  position:relative;
+  font-family:'Manjari', sans-serif;
+  font-size:40pt;
+  display: block;
+  padding: 15px;
+  border:solid #87CEFA;
+  background: transparent; 
+  border-radius:15px;
+  color:#87CEFA;
+  text-align: center;
+  text-decoration: none;
+  top:-320px;
+  left:120px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+article.texto button:hover{
+ 
+  border:solid #98FB98;
+  border-radius:35px;
+  color:#98FB98;
+  transition:0.3s;
+
+}
+
+article.texto h2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:500px;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  font-size:20pt;
+  top:450px;
+  color:#8392b2;
+  left:650px;
+  text-indent:20px;
+}
+
+section#ball img{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:320px;
+  height:70px;
+  top:-380px;
+  left:100px;
+}
+
+section#ball img.ilha{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:300px;
+  height:300px;
+  top:-390px;
+  left:-440px;
+}
+
+section#ball{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/ball.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:420px;
+
+}
+
+section#ball h1{
+
+padding-bottom:650px;
+opacity:0;
+
+}
+/*fecha sessão */
+
+
+
+/*sessão PS*/
+
+
+section#ps article.texto button{
+  position:relative;
+  font-family:'Manjari', sans-serif;
+  font-size:40pt;
+  display: block;
+  padding: 15px;
+  border:solid white;
+  background: transparent; 
+  border-radius:15px;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  top:-60px;
+  left:120px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+section#ps article.texto button:hover{
+ 
+  border:solid 	#FF4500;
+  border-radius:35px;
+  color:	#FF4500;
+  transition:0.3s;
+
+}
+
+
+
+
+section#ps h3.titulo{
+
+  position:absolute;
+  font-family:'Manjari', sans-serif;
+  font-size:50pt;
+  top:90px;
+  color:white;
+  left:380px;
+  text-indent:20px;
+}
+  
+
+section#ps img{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-220px;
+  left:-500px;
+}
+
+section#ps{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/pscapa.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:145px;
+
+}
+
+section#ps h1{
+
+padding-bottom:380px;
+opacity:0;
+
+}
+
+section#ps article.texto h2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:500px;
+  font-size:20pt;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  top:230px;
+  color:#FF6347;
+  left:480px;
+  text-indent:20px;
+}
+
+
+/*fecha sessão */
+
+
+/* sessão prog */
+section#prog article.texto button{
+  position:relative;
+  font-family:'Manjari', sans-serif;
+  font-size:40pt;
+  display: block;
+  padding: 15px;
+  border:solid #698B69;
+  background: transparent; 
+  border-radius:15px;
+  color:#698B69;
+  text-align: center;
+  text-decoration: none;
+  top:-220px;
+  left:120px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+section#prog article.texto button:hover{
+ 
+  border:solid #00FF7F;
+  border-radius:35px;
+  color:#00FF7F;
+  transition:0.3s;
+
+}
+
+
+
+
+section#prog h3.titulo{
+
+  position:absolute;
+  font-family:'Manjari', sans-serif;
+  font-size:55pt;
+  top:150px;
+  color:#698B69;
+  left:530px;
+  text-indent:20px;
+}
+  
+
+section#prog img{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:200px;
+  height:200px;
+  top:-220px;
+  left:-500px;
+}
+
+
+section#prog{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/proga.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:180px;
+
+}
+
+section#prog article.texto h2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:500px;
+  font-size:20pt;
+  font-family:'Manjari', sans-serif;
+  text-align:left;
+  top:270px;
+  color:#00FF7F;
+  left:550px;
+  text-indent:20px;
+}
+
+
+section#prog h1{
+
+padding-bottom:500px;
+opacity:0;
+
+}
+/*fecha sessão */
+
+
+
+/*menu responsivo*/
+
+* {
+
+margin:0;
+padding:0;
+list-style-type:none;
+}
+
+
+header.full{
+ 
+  position:relative;
+  top:-1510px;
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+}
+
+a:hover{
+
+  opacity:0.7;
+  color:#ee1160;
+}
+
+
+nav{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+font-family: 'Manjari', sans-serif;
+background:#0c0c0c;
+height:15vh;/* vh = viewport height*/
+font-size:20pt;
+top:-1710px;
+
+}
+
+.nav{
+
+  display:flex;
+}
+
+.nav li{
+
+letter-spacing:4px;
+margin-left:32px;
+
+}
+
+/*responsive part*/
+
+.mobile div{
+
+  display:none;
+  width:32px;
+  height:2px;
+  background:white;
+  margin:8px;
+
+}
+
+.mobile{
+
+  cursor:pointer;
+}
+
+/*desaparece os dois menus responsivos*/
+
+header.full1{
+  display:none;
+}
+header.full2{
+  display:none;
+}
+
+
+@media screen and (max-width: 1236px) {
+
+/*desaparece os dois menus responsivos*/
+header.full1{
+  display:none;
+}
+  
+header.full2{
+  display:none;
+}
+
+
+header#topo{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/first.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:93.4%;
+left:-10px;
+top:-500px;
+}
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+/*inputs mobile*/
+
+div.radios{
+display:none;
+}
+div.radios2{
+display:block;
+}
+
+
+  div.radios2 input{
+  position:relative;
+  appearance:none;
+  padding:30px;
+  display:block;
+  width:70px;
+  height:70px;
+  margin:40px;
+  background:grey;
+  top:0px;
+  left:390px;
+  border:solid #87CEFA;
+  background: transparent; 
+  border-radius:33px;
+}
+div.radios2 input:before{/*aqui ele mostra o selecionado*/
+content:'';
+}
+
+
+img#icon{
+position:absolute;
+width:130px;
+height:130px;
+left:15px;
+
+}
+
+  header#topo img{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  top:300px;
+  left:-30px;
+  width:650px;
+  height:280px; 
+  }
+
+
+
+/*desaparece menu tela grande*/
+
+
+header.full{
+  display:none;
+}
+
+  header#topo{
+  
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/first.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:0vh;
+  height:1500px;
+  
+  }
+ 
+header#topo h1{
+
+padding-bottom:300px;
+opacity:0;
+
+}
+
+/*sessão balltown*/
+
+section#ball h1{
+
+padding-bottom:650px;
+opacity:0;
+
+}
+  section#ball{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/mobile/ball2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:right;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:1295px;
+  height:2000px;
+  
+  }
+ 
+  section#ball img.ilha{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:300px;
+  height:300px;
+  top:590px;
+  left:-40px;
+}
+
+
+  section#ball img{
+  
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  width:480px;
+  height:100px;
+  top:-360px;
+  left:-10px;
+}
+
+
+  article.texto button{
+  position:relative;
+  top:620px;
+  font-size:65pt;
+  border-radius:25px;
+  left:-30px;
+}
+
+article.texto h2 {
+  
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  width:500px;
+  text-align:center;
+  top:540px;
+  text-shadow:#8392b2 2.5px 0px;
+  font-size:40pt;
+  color:#8392b2;
+  left:270px;
+  text-indent:20px;
+}
+
+/*fecha sessão*/
+
+
+
+
+/*sessão ps*/
+
+section#ps article.texto button{
+  position:relative;
+  top:890px;
+  font-size:65pt;
+  border-radius:25px;
+  left:-30px;
+}  
+
+section#ps{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/mobile/pscapa2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:right;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:1285px;
+  height:1800px;
+  
+  }
+ 
+  section#ps h3.titulo{
+
+position:absolute;
+font-family:'Manjari', sans-serif;
+font-size:55pt;
+top:110px;
+color:white;
+left:50px;
+text-indent:20px;
+}
+
+
+section#ps img{
+
+display:flex;
+flex-direction:column;
+position:relative;
+width:200px;
+height:200px;
+top:770px;
+left:-30px;
+}
+
+section#ps article.texto h2 {
+  
+
+  position:absolute;
+  width:500px;
+  font-family:'Manjari', sans-serif;
+  text-align:center;
+  top:370px;
+  font-size:40pt;
+  color:#FF6347;
+  left:270px;
+
+}
+
+/*fecha sessão*/
+
+
+
+/*programação*/
+
+section#prog article.texto button{
+  position:relative;
+  top:620px;
+  font-size:65pt;
+  border-radius:25px;
+  left:-30px;
+}  
+
+section#prog{
+  
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  background-image:url("img/mobile/prog2.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:right;
+  padding-left:100px;
+  color:white;
+  width:90.8%;
+  left:-10px;
+  top:1290px;
+  height:1800px;
+  
+  }
+ 
+section#prog h3.titulo{
+
+position:absolute;
+font-family:'Manjari', sans-serif;
+font-size:65pt;
+top:110px;
+color:#698B69;
+left:220px;
+text-indent:20px;
+}
+
+
+section#prog img{
+
+display:flex;
+flex-direction:column;
+position:relative;
+width:200px;
+height:200px;
+top:450px;
+left:-40px;
+}
+
+section#prog article.texto h2 {
+  
+
+  position:absolute;
+  width:500px;
+  font-family:'Manjari', sans-serif;
+  text-align:center;
+  font-size:40pt;
+  top:370px;
+  color:#54FF9F;
+  left:270px;
+
+}
+
+
+/*fecha sessão*/
+
+/*footer*/
+
+footer.rodape h1{
+
+padding-bottom:300px;
+opacity:0;
+
+}
+
+
+footer.rodape  h3 {
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:33pt;
+color:cyan;
+top:-60px;
+left:-30px;
+opacity:0.5;
+}
+
+footer.rodape  h3#acess{
+position:relative;
+font-family:'Manjari', sans-serif;
+font-size:30pt;
+color:#ee1160;
+top:110px;
+left:-30px;
+}
+
+
+
+footer.rodape img#gp{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+left:-200px;
+top:-80px;
+}
+
+
+footer.rodape img#yt{
+position:relative;
+display:flex;
+padding:20px;
+flex-direction:column;
+width:320px;
+height:120px;
+top:-225px;
+left:180px;
+}
+
+
+
+footer.rodape{
+
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+background-image:url("img/footer.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+padding-left:100px;
+color:white;
+width:90.8%;
+left:-10px;
+top:1100px;
+}
+/*fecha sessão*/
+
+
+/*altura do menu responsivo*/
+
+header.full2 nav {
+
+  height:180px;
+
+}
+
+header.full2{
+  
+  display:block;
+  position:relative;
+  top:-3900px;
+}
+
+/*desaparece menu que fica encima do nav*/
+
+header.full1{
+  
+  display:block;
+  position:absolute;
+  top:-2000px;
+
+}
+
+a{
+  color:#87CEEB;
+  transition:0.3s;
+  text-decoration:none;
+
+
+
+}
+
+a:hover{
+
+  opacity:0.7;
+}
+
+.logo2{
+ font-size:24px;
+ text-transform:uppercase;
+ letter-spacing:7px;
+ 
+}
+
+.nav2{
+
+  position:relative;
+  display:flex;
+  height:50vh;
+  width:100vw;
+  background:#0c0c0c;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  font-size:45pt;
+  transform:translateY(1400px);      /*nav escondida */
+  transition:transform 0.3s ease-in;
+  padding-top:120px;
+  padding-bottom:100px;
+  margin-top:200px;
+  top:1700px;
+
+
+}
+
+.nav2.active{                       /*active é uma classe que vai ser usada no js*/
+  
+  transform:translateY(2380px);     /*nav sendo mostrada */
+  
+}
+
+
+.nav2 li{
+  margin-top:-1680px; /* esconde os links */
+  margin-left:0px;
+  background-image:url("img/back3.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position top:300px;
+  padding:40px;
+
+}
+
+
+
+
+.mobile2{
+
+display:block;
+cursor:pointer;
+}
+
+
+
+.mobile2 div{
+position:relative;
+display:flex;
+width:100px;
+height:20px;
+border-radius:10px;
+background:#87CEEB;
+margin:8px;
+border:none;
+transition:0.3s;
+left:340px;
+}
+
+/*animação hamburger*/
+
+
+
+@keyframes linkFade{             /*animação links */
+ 
+
+to{
+
+opacity:1;
+transform:translateY(870px);
+
+
+}
+
+
+}
+
+
+/*animação menu hamburger*/
+
+.mobile2.active .l1{
+
+transform: rotate(-45deg) translate(-8px,8px);
+background:#ee1160;
+}
+
+.mobile2.active .l2{
+
+opacity:0;
+
+}
+.mobile2.active .l3{
+
+transform: rotate(43deg) translate(-15px,-18.5px);
+background:#ee1160;
+}
+  }
+
+/*para telas com alturas(height) menores como microsoft lumia 550*/
+
+@media screen and (max-height:1024px) {
+
+
+
+  div.radios2  input{
+  position:relative;
+  appearance:none;
+  padding:30px;
+  display:block;
+  width:50px;
+  height:50px;
+  margin:40px;
+  background:grey;
+  top:-450px;
+  left:390px;
+}
+
+
+
+div.radios2 input:checked{
+  appearance:none;
+  width:60px;
+  height:60px;
+}
+
+
+
+.nav2{
+
+padding-top:300px;
+padding-bottom:450px;
+
+
+}
+
+.nav2 li{
+ 
+  position:relative;
+  margin-top:80px;
+  top:-880px;
+
+}
+
+
+
+}
+
+
+
+</style>
+  
+</head>
+ 
+<body >
+
+
+
+<!--balltown-->
+
+<section id="ball">
+
+<h1>Espaço</h1>
+
+<img src="img/titulo.png"/>
+<img class="ilha" src="img/0.png"/>
+
+<article class="texto">
+<h2 class="tx"> 
+  BallTown é um jogo de aventura
+  onde você terá que enfrentar 
+  cada fase e seus obstáculos
+  passando por diferentes e desafiantes Ambientes.<br><br>
+  Entre nesse mundo de esferas malucas e viva essa Aventura &nbsp!
+</h2>
+
+<a href="ball.html"><button class="saiba mais">Saiba mais</button></a>
+</article>
+
+</section>
+
+<!--balltown-->
+
+<!--prog-->
+
+<section id="prog">
+
+<h1>Espaço</h1>
+<img  src="img/prog.png"/>
+
+<article class="texto">
+
+<h3 class="titulo">Programação</h3>
+<h2 class="tx"> 
+ Falaremos sobre o mundo da programação, 
+ a história de algums linguagens , novas tecnologias e
+ noções básicas de programar. 
+
+</h2>
+
+<a href="prog.html"><button class="saiba mais">Saiba mais</button></a>
+
+
+</article>
+
+
+</section>
+
+<!--prog-->
+
+<!--Ps-->
+
+<section id="ps">
+
+<h1>Espaço</h1>
+<img  src="img/ps2.png"/>
+
+<article class="texto">
+
+<h3 class="titulo">+ Dicas de Photoshop e Edição</h3>
+<h2 class="tx"> 
+  Mostraremos algumas dicas de Photoshop e edição,
+  ferramentas básicas ,
+  como fazer efeitos específicos e exemplos de montagem gráfica.
+  <br>
+  <br>
+  Venha aprender mais sobre esta incrivel ferramenta !
+</h2>
+
+<a href="edicao.html"><button class="saiba mais">Saiba mais</button></a>
+
+
+</article>
+
+</section>
+
+<!--Ps-->
+
+
+<header id="topo">
+
+<h1>Espaço</h1>
+<img src="img/jl.png" class="jl"/>
+
+<!--Radios-->
+
+<div class="radios">
+<input type="radio" id="r1" onclick="first();" checked/>
+<input type="radio" id="r2" onclick="second();"/>
+<input type="radio" id="r3" onclick="third();"/>
+<input type="radio" id="r4" onclick="forth();"/>
+</div>
+
+<!--Radios MOBILE-->
+<div class="radios2">
+<input type="radio" id="r10" onclick="first();" checked/>
+<input type="radio" id="r20" onclick="second();"/>
+<input type="radio" id="r30" onclick="third();"/>
+<input type="radio" id="r40" onclick="forth();"/>
+</div>
+
+</header>
+
+
+<script src="input1.js"></script>
+
+
+<!--first menu-->
+
+<header class="full">  
+<nav>
+
+
+<img  id="icon" src="img/icon.png"/>
+
+
+
+<div class="mobile">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+<ul class="nav">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+
+</ul>
+
+</header>
+
+</nav>
+
+
+<!--second menu-->
+
+
+<header class="full1">  
+<nav>
+
+
+<ul class="nav2">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="jogos.html">Jogos</a></li>
+<li><a href="edicao.html">Edição</a></li>
+<li><a href="prog.html">Programação</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+
+
+</ul>
+
+</header>
+
+</nav>
+
+
+<header class="full2">  
+<nav>
+
+<img  id="icon" src="img/icon.png"/>
+
+
+<div class="mobile2">
+
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="l3"></div>
+
+</div>
+
+
+</header>
+
+</nav>
+
+<footer class="rodape">
+<h3 id="acess"> Acesse também :</h3>
+<h1>Espaço</h1>
+<a href="https://play.google.com/store/apps/developer?id=JL+Desenvolvedores" target="_blank"><img  id="gp" src="img/gp2.png"/></a>
+<a href="https://www.youtube.com/channel/UC_1ELvJeqDve3ckNsCM0-5g" target="_blank"><img  id="yt" src="img/yt2.png"/></a>
+
+<h3> <img src="img/copy.png"/> <span id="ano"></span> Desenvolvido por</br> 
+JL desenvolvedores</h3>
+
+</footer>
+
+<script src="js.js"></script>
+</body>
+</html>
