@@ -23,27 +23,19 @@ $(window).scroll(function(){
 var position=$(window).scrollTop();
 
 
-if(position >=2400){
 
-
-
-}else{
-  
 
 $("div.radios").css({top:position, position:'relative'});
 
 
-}
-if(position >= 7600){
 
-
-
-}else{
   
 
 $("div.radios2").css({top:position, position:'relative'});
 
-}
+
+
+
 
 
 document.getElementById("ano").innerHTML = new Date().getFullYear();

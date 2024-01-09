@@ -18,40 +18,24 @@ document.getElementById("r40").style.left="295px";
 document.getElementById("r50").style.left="295px";
 
 $(window).scroll(function(){      
+
 var position=$(window).scrollTop();
 
 
-
-if(position >=2900){
-
-
-
-}else{
-  
-
+if(position >=2900){  }else{
+    
 $("div.radios").css({top:position, position:'relative'});
-
 
 }
 
-
-if(position >= 7600){
-
-
-
-}else{
+if(position >= 7600){  }else{
   
-
 $("div.radios2").css({top:position, position:'relative'});
 
 }
 
 
-
 document.getElementById("ano").innerHTML = new Date().getFullYear();
-
-
-
 
 
 var home2=$(this).attr("topo2");
@@ -64,11 +48,6 @@ var ps=$(this).attr("ps");
 var posicao4=$(ps).offset().top;
 var final=$(this).attr("final");
 var posicao5=$(final).offset().top;
-
-
-
-
-
 
 
 if(position >=posicao1 && position < posicao2){
